@@ -23,7 +23,7 @@ int main()
         
         switch(opcao){
             case 1:
-                printf("\n Seu saldo atual é de R$ %.2F\n", saldo);
+                printf("\n Seu saldo atual é de R$ %.2f\n", saldo);
             break;
             
             case 2:
@@ -42,7 +42,7 @@ int main()
                 scanf("%f", &valor);
                 if(valor > 0 && valor <= saldo){
                     saldo -= valor;
-                    printf("O valor de R$ %2.f foi sacado com sucesso\n", valor); 
+                    printf("O valor de R$ %.2f foi sacado com sucesso\n", valor); 
                 } else if(valor > saldo){
                     printf("Saldo insuficiente\n");
                 } else{
@@ -56,7 +56,7 @@ int main()
                 if(valor > 0){
                     saldo += valor;
                     emprestimo += valor;
-                    printf("O empréstimo de R$ %2.f foi adicionado a sua conta\n", valor);
+                    printf("O empréstimo de R$ %.2f foi adicionado a sua conta\n", valor);
                 } else{
                     printf("Valor de empréstimo inválido\n");
                 }
@@ -66,7 +66,7 @@ int main()
                 if(emprestimo == 0){
                     printf("Você não possui dividas de empréstimo para pagar\n");
                 } else{
-                    printf("Sua divida é de R$ %2.f\n", emprestimo);
+                    printf("Sua divida é de R$ %.2f\n", emprestimo);
                     printf("Digite o valor da divida em que deseja pagar:\n");
                     scanf("%f", &valor);
                 }
@@ -75,7 +75,7 @@ int main()
                 if(valor > 0 && valor <= saldo && valor <= emprestimo){
                     saldo -= valor;
                     emprestimo -= valor;
-                    printf("Pagamento de R$ %2.f realizado com sucesso\n", valor);
+                    printf("Pagamento de R$ %.2f realizado com sucesso\n", valor);
                 } else if( valor > saldo){
                     printf("Saldo insuficiente para realizar o pagamento da divida\n");
                     
@@ -88,7 +88,7 @@ int main()
             break;
             
             case 6: 
-                printf("O valor de empréstimo solicitado é de R$ %2.f", emprestimo);
+                printf("O valor de empréstimo solicitado é de R$ %.2f", emprestimo);
             break;
             
             case 7:
