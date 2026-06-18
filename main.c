@@ -69,10 +69,7 @@ int main()
                     printf("Sua divida é de R$ %.2f\n", emprestimo);
                     printf("Digite o valor da divida em que deseja pagar:\n");
                     scanf("%f", &valor);
-                }
-                
-                
-                if(valor > 0 && valor <= saldo && valor <= emprestimo){
+                     if(valor > 0 && valor <= saldo && valor <= emprestimo){
                     saldo -= valor;
                     emprestimo -= valor;
                     printf("Pagamento de R$ %.2f realizado com sucesso\n", valor);
@@ -84,6 +81,7 @@ int main()
                     
                 } else{
                     printf("Valor inválido\n");
+                }
                 }
             break;
             
