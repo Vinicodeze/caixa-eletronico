@@ -10,7 +10,7 @@ int main()
     float valor;
     
     do{
-        printf("\nBem Vindo\n");
+        printf("\nBoas Vindas\n");
         printf("1- Verificar saldo\n");
         printf("2- Depositar valor\n");
         printf("3- Sacar valor\n");
