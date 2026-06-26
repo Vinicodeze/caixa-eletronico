@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+void main()
 {   
     int opcao;
     float saldo = 1000.00;
@@ -101,5 +101,4 @@ int main()
     } while(opcao !=7);
     
 
-    return 0;
 }
